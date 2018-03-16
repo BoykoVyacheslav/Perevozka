@@ -1,0 +1,209 @@
+html
+{
+    position: relative;
+    min-height: 100%;
+}
+body
+{
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/main.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+}
+hr
+{
+    border-color: black;
+}
+.container,
+.container-fluid,
+.row
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*Navbar Styles*/
+.navbar
+{
+    border: none;
+    border-radius: 0;
+}
+.navbar-brand
+{
+    padding-left: 40px;
+}
+.navbar-right
+{
+    padding-right: 40px;
+}
+.glyphicon
+{
+    margin-right: 5px;
+}
+/*Content Pane Styles*/
+.content
+{
+    position: relative;
+
+    height: 100%;
+    padding-top: 50px;
+}
+/*How it works styles*/
+.steps
+{
+    margin-top: 120px;
+}
+.wells
+{
+    height: 500px;
+
+    opacity: .9;
+}
+#hiw
+{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+#hiw-info
+{
+    margin-top: 100px;
+
+    opacity: .9;
+}
+/*FAQ styles*/
+.questions
+{
+    margin-top: 30px;
+    border-radius: 15px;
+    opacity: .9;
+}
+#faq
+{
+    margin: 0 30px;
+}
+/*Get Car styles*/
+#getCarBtn{
+  position: fixed;
+  height: 80px;
+  bottom: 10px;
+}
+.navbar-fixed-left
+{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    opacity: .9;
+    border-radius: 0;
+}
+
+.vertical-nav > li
+{
+    width: 100%;
+}
+.car-content
+{   
+    margin-left: 200px;
+    min-height: 100%;
+}
+/*Car type*/
+#car
+{
+    opacity: .9;
+}
+#selectedCar
+{
+    border: none;
+}
+.jumbotron
+{   
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+}
+.car-container
+{
+    position: relative;
+    height:auto;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    display: inline-block;
+    opacity: .8;
+}
+.car-container:hover
+{   
+  opacity: 1;
+  border: 3px outset snow;
+}
+.carImage
+{   
+  display: inline-block;
+  width: 30%;
+  height: auto;
+}
+.carDesc
+{   
+  display: inline-block;
+  vertical-align:top;
+  margin-left: 30px;
+  width: 60%;
+}
+
+/*Load description*/
+
+#load-desc
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    height: auto;
+    opacity: .9;
+}
+/*Route and date*/
+.route
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+
+div.line
+{
+    display: inline;
+    width: 100%;
+    height: auto;
+}
+
+/*Confirm order*/
+#confirm
+{
+    opacity: .9;
+}
+/*Login and Registration*/
+.container.login
+{
+    width: 90%;
+    height: 310px;
+    margin-top: 25px;
+}
+.container.register
+{
+    width: 90%;
+    height: 410px;
+    margin-top: 25px;
+}
+.container.recovery
+{
+    width: 90%;
+    height: 150px;
+    margin-top: 25px;
+}
+.red
+{
+    border: solid 3px red;
+}

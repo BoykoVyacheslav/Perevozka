@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+  	<script src="js/jquery-3.2.1.min.js"></script>
+  	<script src="js/main.js"></script>
+	<title>Perevezi.ua</title>
+</head>
+
+<body>
+<!--Header-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#target" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a data-toggle="tab" href="#home" class="navbar-brand active">Perevezi.ua</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="target">
+				<ul class="nav navbar-nav" id="main-nav">
+					<li><a data-toggle="tab" href="#hiw">How it works?</a></li>
+					<li><a data-toggle="tab" href="#faq">FAQ</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="user-detail">
+						<li><a data-toggle="tab" href="#envelops"><span class="glyphicon glyphicon-envelope"></span>2</a></li>
+						<li><a data-toggle="tab" href="#user-page"><span class="glyphicon glyphicon-user"></span>User</a></li>
+						<li><a data-toggle="modal" href="#login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!--Content Area-->
+	<div class="container-fluid content">
+		<div class="tab-content">
+		<!--Home page-->
+				<div id="home" class="tab-pane fade">
+					<button id="getCarBtn"  data-toggle="tab" href="#get-car" 
+					class="btn btn-warning btn-block btn-lg">Get car</button>
+				</div>
+		<!--How it works-->
+				<div id="hiw" class="tab-pane fade">
+					<div class="row container-fluid steps" align="center">
+						<div class="col-lg-3 col-md-6 well wells">
+								<h2>Шаг 35.</h2>
+								<img src="images/van.png" class="img-rounded" alt="load-description"></img>
+								<br/><br/>
+								Выбираете предпочитаемый тип автомобиля.<br/>
+
+						</div>
+						<div class="col-lg-3 col-md-6 well wells">
+								<h2>Шаг 2.</h2>
+								<img src="images/box.png" class="img-rounded" alt="car_type"></img>
+								<br/><br/>
+								Указываете краткое описание груза и дополнительные пожелания.
+								<br/>
+						</div>
+						<div class="col-lg-3 col-md-6 well wells">
+								<h2>Шаг 3.</h2>
+								<img src="images/route.jpg" class="img-rounded" alt="route"></img>
+								<br/><br/>
+								Выбираете маршрут и дату перевозки.<br/>
+						</div>
+						<div class="col-lg-3 col-md-6 well wells">
+								<h2>Шаг 4.</h2>
+								<img src="images/confirm.jpg" class="img-rounded" alt="confirm"></img>
+								<br/><br/>
+								Выбираете подходящего перевозчика из списка откликов.
+						</div>
+						<div class="col-lg-12 col-md-12 well" id="hiw-info" align="center">
+								Если Вы имеете автомобиль и желаете стать перевозчиком,<br/>
+								то можете пройти специальную 
+								<a data-toggle="tab" href="#reg-driver">форму регистрации</a> <br/>
+								и выполнять заказы от других пользователей данного ресурса.
+						</div>
+					</div>
+				</div>
+		<!--FAQ-->
+				<div id="faq" class="tab-pane fade">
+					<div class="row container-fluid">
+						<div class="col-lg-12 well questions">
+							<h4><span class="glyphicon glyphicon-search"></span>Question:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cum voluptatem cupiditate ab fugiat suscipit quia, similique ipsa tempora possimus temporibus iure voluptatum maxime, consequatur qui ad saepe commodi doloribus?</p>
+							<h4><span class="glyphicon glyphicon-ok"></span>Answer:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, qui assumenda. Ea odit nisi, nihil ex obcaecati iusto pariatur, ipsa blanditiis quaerat soluta velit a distinctio delectus omnis veritatis qui.</p>
+						</div>
+						<div class="col-lg-12 well questions">
+							<h4><span class="glyphicon glyphicon-search"></span>Question:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cum voluptatem cupiditate ab fugiat suscipit quia, similique ipsa tempora possimus temporibus iure voluptatum maxime, consequatur qui ad saepe commodi doloribus?</p>
+							<h4><span class="glyphicon glyphicon-ok"></span>Answer:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, qui assumenda. Ea odit nisi, nihil ex obcaecati iusto pariatur, ipsa blanditiis quaerat soluta velit a distinctio delectus omnis veritatis qui.</p>
+						</div>
+						<div class="col-lg-12 well questions">
+							<h4><span class="glyphicon glyphicon-search"></span>Question:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cum voluptatem cupiditate ab fugiat suscipit quia, similique ipsa tempora possimus temporibus iure voluptatum maxime, consequatur qui ad saepe commodi doloribus?</p>
+							<h4><span class="glyphicon glyphicon-ok"></span>Answer:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, qui assumenda. Ea odit nisi, nihil ex obcaecati iusto pariatur, ipsa blanditiis quaerat soluta velit a distinctio delectus omnis veritatis qui.</p>
+						</div>
+						<div class="col-lg-12 well questions">
+							<h4><span class="glyphicon glyphicon-search"></span>Question:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cum voluptatem cupiditate ab fugiat suscipit quia, similique ipsa tempora possimus temporibus iure voluptatum maxime, consequatur qui ad saepe commodi doloribus?</p>
+							<h4><span class="glyphicon glyphicon-ok"></span>Answer:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, qui assumenda. Ea odit nisi, nihil ex obcaecati iusto pariatur, ipsa blanditiis quaerat soluta velit a distinctio delectus omnis veritatis qui.</p>
+						</div>
+						<div class="col-lg-12 well questions">
+							<h4><span class="glyphicon glyphicon-search"></span>Question:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cum voluptatem cupiditate ab fugiat suscipit quia, similique ipsa tempora possimus temporibus iure voluptatum maxime, consequatur qui ad saepe commodi doloribus?</p>
+							<h4><span class="glyphicon glyphicon-ok"></span>Answer:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, qui assumenda. Ea odit nisi, nihil ex obcaecati iusto pariatur, ipsa blanditiis quaerat soluta velit a distinctio delectus omnis veritatis qui.</p>
+						</div>
+					</div>
+				</div>
+		<!--Get Car-->
+			<!--Car Type  -->
+				<div id="get-car" class="tab-pane fade">
+					<nav class="navbar navbar-inverse navbar-fixed-left">
+					    <ul class="nav navbar-nav vertical-nav">
+						    <li class="active"><a data-toggle="tab" href="#car">Car type</a></li>
+						    <li><a data-toggle="tab" href="#load">Load description</a></li>
+						    <li><a data-toggle="tab" href="#map">Route &amp; date</a></li>
+						    <li><a data-toggle="tab" href="#confirm">Confirm order</a></li>
+					    </ul>
+					</nav>
+					<div class="tab-content car-content">
+						<div class="tab-pane fade" id="car">
+							<div class="jumbotron">	
+								<div class="car-container">
+					    			<div class="carImage">
+					    				<img src="images/minivan.jpg" alt="minivan"
+											 class="img-responsive" width="400" height="200"/>
+					    			</div>
+							    	<div class="carDesc">
+							    		<p>
+							    			Грузоподъемность: до 500 кг<br/>
+							    			Габариты кузова <i>(д/ш/в)</i>: 1.5 / 1.2 / 0.8 м.<br/>
+							    			Описание: Данный тип автомобиля отлично подойдет для перевозки малогабаритной мебели, бытовой техники или вашего багажа. 
+
+							    		</p>
+							    	</div>
+					    		</div>
+					    		<div class="car-container">
+					    			<div class="carImage">
+					    				<img src="images/micro-bus.jpg" alt="minivan"
+											 class="img-responsive" width="400" height="200"/>
+					    			</div>
+							    	<div class="carDesc">
+							    		<p>
+							    			Грузоподъемность: до 1500 кг<br/>
+							    			Габариты кузова (<i>д/ш/в м</i>): 1.5 / 1.2 / 0.8<br/>
+							    			Описание: Автомобили этого класса способны перевозить габаритные грузы,<br/>
+							    			а так же имеет хорошую грузоподъемность.
+							    		</p>
+							    	</div>
+					    		</div>
+					    		<div class="car-container">
+					    			<div class="carImage">
+					    				<img src="images/gazel.jpg" alt="minivan"
+											 class="img-responsive" width="400" height="200"/>
+					    			</div>
+							    	<div class="carDesc">
+							    		<p>
+							    			Грузоподъемность: до 2500 кг<br/>
+							    			Габариты кузова (<i>д/ш/в м</i>): 1.5 / 1.2 / 0.8<br/>
+							    			Описание: Идеальный выбор,если Вам не удается точно оценить массо-габаритные характеристики груза.
+							    		</p>
+							    	</div>
+					    		</div>
+					    		<div class="car-container">
+					    			<div class="carImage">
+					    				<img src="images/samosval.jpg" alt="" class="img-responsive" width="400" height="200"/>
+					    			</div>
+							    	<div class="carDesc">
+							    		<p>
+							    			Грузоподъемность: до 20 т кг<br/>
+							    			Габариты кузова (<i>д/ш/в м</i>): 1.5 / 1.2 / 0.8<br/>
+							    			Описание: Если Вас интересует вывоз строй-мусора, либо же перевозка сыпучих материалов, значит Это Ваш выбор.
+							    		</p>
+							    	</div>
+					    		</div>
+					    		<div class="car-container">
+					    			<div class="carImage">
+					    				<img src="images/fura.jpg" alt="" class="img-responsive" width="400" height="200"/>
+					    			</div>
+							    	<div class="carDesc">
+							    		<p>
+							    			Грузоподъемность: до 30 т<br/>
+							    			Габариты кузова (<i>д/ш/в м</i>): 1.5 / 1.2 / 0.8<br/>
+							    			Описание: Отлчино подойдет для дальних коммерческих перевозок.
+							    		</p>
+							    	</div>
+					    		</div>
+					    		<br/>
+					    		<button id="ct" data-toggle="tab" href="#load" class="btn btn-primary btn-lg btn-block">Далее</button>	
+					    	</div>
+						</div>
+			<!-- Load Description -->
+						<div class="tab-pane fade" id="load">
+							<div class="jumbotron" id="load-desc">
+								<form action="">
+									<h2>Краткое описание груза</h2><br/>
+									<p>
+										Данная информация будет полезна водителю, для предварительной подготовки автомобиля к перевозке Вашего груза.
+									</p>
+									<p>
+										Ещё вы можете указать дополнительные пожелания по перевозке.
+									</p>
+									
+									<div class="form-group">
+									  <label for="comment">Описание груза:</label>
+									  <textarea class="form-control" rows="10" 
+									  id="comment" placeholder="Диван и два кресла, примерно 400 кг"></textarea>
+									</div>
+
+									<div class="form-group">
+									  <label for="comment">Дополнительные пожелания:</label>
+									  <textarea class="form-control" rows="5" 
+									  id="wishes" placeholder="Необязательно"></textarea>
+									</div><br/><br/><br/>
+									<button id="ld" data-toggle="tab" href="#map" class="btn btn-primary btn-lg btn-block">Далее</button>
+								</form>
+							</div>
+						</div>
+			<!-- Route and Map -->
+					    <div class="tab-pane fade" id="map">
+					    	<div class="jumbotron route">
+					    		<form action="">
+					    			<h2>Укажите необходимый маршрут и дату поездки</h2><br/>
+									<p>
+										Мы поможем построить оптимальный маршрут, но ,в случае необходимости, детали можете обсудить непосредственно с водителем.
+									</p>
+									<p>
+										Если Вам необходимо выполнить перевозку сегодня, то воспользуйтесь поиском свободных перевозчиков.
+									</p>
+									<br/><br/>
+										<div class="line">
+											<label for="from">Откуда:</label><br/>
+											<input id="from" type="text" class="form-control" placeholder="ул.Тургенева 3"></input>
+											<label for="to">Куда:</label><br/>
+											<input id="to" type="text" class="form-control" placeholder="ул.Пушкина 12"></input>
+										</div>
+										<br/>
+										<div class="line">
+											<label for="date">Дата:</label>
+											<input id="date" type="date" class="form-control"></input>
+											<br/>
+											<label for="time">Время:</label>
+											<input id="time"  type="time" class="form-control"></input><br/><br/><br/>
+										</div>	
+										<button id="rd" data-toggle="tab" href="#confirm" class="btn btn-primary btn-lg btn-block">Далее</button>	
+					    		</form>
+					    	</div>
+					    </div>
+			<!-- Confirm Page -->
+					    <div class="tab-pane fade" id="confirm">
+					    	<div class="jumbotron">
+					    		<form action="">
+					    			<div class="form-group">
+									  	<label for="selectedCar">Тип автомобиля:</label>
+									  	<div id="selectedCar"></div>
+									</div>
+									<hr></hr>
+									<div class="form-group">
+									  <label for="load-desc">Описание груза и пожелания:</label>
+									  	<p id="sComment" class="load-desc">
+										</p>
+										<div id="sWishes"></div>
+									</div>
+									<hr></hr>
+									<div class="form-group">
+										<label>Маршрут:</label>
+										<div id="sFrom"></div>
+										<div id="sTo"></div><br/>
+										<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20316.062097243193!2d30.44533643612503!3d50.46889030222603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x40d4cdb76b91ecb5%3A0x7b2e4c96a9e4d678!2z0YPQuy4g0JDQutCw0LTQtdC80LjQutCwINCT0YDQtdC60L7QstCwLCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LA!3m2!1d50.475542!2d30.4436194!4m5!1s0x40d4ce7c2ed723ef%3A0x63ecc6a6c3fd6f89!2z0YPQuy4g0JrQvtC_0LXRgNC90LjQutCwLCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LA!3m2!1d50.4582699!2d30.4801714!5e0!3m2!1sru!2sru!4v1510697399906" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen="true"></iframe>
+										<label>Дата и время:</label>
+										<div id="sDate"></div>
+										<div id="sTime"></div>
+									</div>
+									<br/>
+									<button id="send" class="btn btn-success btn-lg btn-block">Подтвертидить заказ!</button>	
+					    		</form>
+					    	</div>
+					    </div>
+					</div>
+				</div>
+		</div>
+	</div>
+	
+<!--Login Modal Dialog-->	
+	<div id="login" class="modal fade" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content" align="center">
+				<div class="container login">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				       <h4 class="modal-title">Login to your account</h4><br/>
+				   	<form action="/login" method="POST">
+					<input type="email" name="user" class="form-control" placeholder="example@gmail.com" required="true"></input><br/>
+					<input type="password" name="pass" class="form-control" placeholder="Password" required="true"></input><br/>
+					<input name="login" type="submit" class="btn btn-primary btn-lg btn-block" value="Login"></input>
+					<a type="button" data-toggle="modal" href="#register" 
+						class="btn btn-success btn-lg btn-block" onclick="$(function () {
+						   $('#login').modal('toggle');});">Register</a>
+					<a data-toggle="modal" href="#password-rec" onclick="$(function () {
+						   $('#login').modal('toggle');});">Forgot your password?</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--Register Modal Dialog-->
+		<div id="register" class="modal fade" role="dialog" aria-hidden="true" style="display: none;">
+			<div class="modal-dialog">
+				<div class="modal-content" align="center">
+					<div class="container register">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        <h4 class="modal-title">Register new account</h4><br/>
+				    <form>
+				    	<input type="text" name="user-name" class="form-control" placeholder="Your name" required="true"></input><br/>
+				    	<input type="text" name="phone" class="form-control" placeholder="Phone number" required="true"></input><br/>
+						<input type="email" name="user" class="form-control" placeholder="example@gmail.com" required="true"></input><br/>
+						<input type="password" name="pass" class="form-control" placeholder="Password" required="true"></input><br/>
+						<input type="password" name="pass" class="form-control" placeholder="Confirm password" required="true"></input>
+						<br/>
+						<input type="submit" name="reg" value="Register" class="btn btn-primary btn-lg btn-block"></input>
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--Password Recover Dialog-->
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
